@@ -57,8 +57,18 @@ h1 {
   .nav-container {
     display: inline-block;
   }
+  .hot:before {
+    content: url("../imgs/home-hot.png");
+    width: 27px;
+    height: 22px;
+    position: absolute;
+    top: 5px;
+    right: -15px;
+    z-index: 10;
+  } //  hot 使用伪元素, 定位相对于所处的 li
   .nav-item {
     display: inline-block;
+    position: relative; // 用来 hot 定位
     a {
       display: inline-block;
       padding: 0 10px;
@@ -69,6 +79,11 @@ h1 {
       transition: all 1s;
     }
   }
+  .nav-item:nth-of-type(1) {
+    a {
+      padding: 0 25px;
+    }
+  } // 对于 首页 两个字做得微调
   .nav-item:hover a {
     background-color: #044881;
   }
