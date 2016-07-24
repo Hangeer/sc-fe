@@ -40,6 +40,12 @@ h1 {
   font-size: 30px;
   vertical-align: sub;
 }
+.icon-tag {
+  margin-left: 10px;
+  margin-right: 5px;
+  font-size: 15px;
+  vertical-align: middle;
+}
 
 /* 公共样式方面 */
 .outer-container {
@@ -190,7 +196,43 @@ h1 {
   } // 最新动态
 
   .competitions {
-
+    .sub-title {
+      margin-bottom: 12px;
+      padding: 0 30px;
+      .more {
+        float: right;
+      }
+    }
+    .activity-container {
+      overflow: hidden;
+    }
+    .activity-item {
+      float: left;
+      margin-right: 10px;
+      margin-bottom: 12px;
+      padding: 15px 5px;
+      width: 210px;
+      background-color: #f8f8f8;
+      .activity-title {
+        display: inline-block;
+        margin-bottom: 15px;
+        font-size: 15px;
+        width: 215px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .activity-img {
+        //margin: 0 auto;
+        width: 100%;
+        height: 145px;
+        background-color: #00cc99;
+      }
+      .activity-tag {
+        margin-top: 15px;
+        color: #aaa;
+      }
+    }
   }
 }
 
