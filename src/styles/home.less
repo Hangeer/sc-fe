@@ -99,3 +99,99 @@ h1 {
   }
 }
 
+.slogan-outer-container {
+  background-color: #00264e;
+  .slogan {
+    width: 100%;
+    height: 410px;
+    background-image: url(../imgs/home-slogan.png);
+  }
+}
+
+.main-outer-container {
+  .banner {
+    margin:12px 0;
+    width: 100%;
+    height: 110px;
+    background: url("../imgs/home-banner.png") no-repeat;
+  }
+  .title {
+    width: 100%;
+    line-height: 40px;
+    padding-left: 10px;
+    background: linear-gradient(to right, #e6e6e6, #fff);
+    margin-bottom: 12px;
+    font-size: 18px;
+    font-weight: 100;
+    color: #333;
+    vertical-align: sub;
+  } // 每个栏目的标题
+  .more {
+    display: inline-block;
+    font-size: 13px;
+  } // 更多
+  .circle {
+    display: inline-block;
+    margin-right: 10px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #868686;
+  } // 标题圆圈部分
+  .main-left {
+    display: inline-block;
+    width: 695px;
+    overflow: hidden;
+  } // 主区域左侧大块
+  .main-right {
+    float: right;
+    width: 310px;
+    height: 100px;
+    background-color: #ddd;
+  } // 主区域右侧大块
+  .main-items {
+    margin-bottom: 12px;
+  } // 每小块距下边 12px
+
+  .new-activities {
+    .slider {
+      display: inline-block;
+      width: 335px;
+      height: 250px;
+      background-color: #ccc;
+    }
+    .news-container {
+      float: right;
+      width: 355px;
+      height: 250px;
+      ul {
+        margin-left: 40px;
+        margin-top: 20px;
+        height: 200px;
+        overflow: hidden;
+      } //  固定 8 条项目 多了自动隐藏
+      li {
+        position: relative;
+        width: 250px;
+        font-size: 14px;
+        line-height: 25px;
+        white-space:nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      li:before {
+        content: "• ";
+      } // 因为 overflow hidden 所以用中文点号代替
+      .more {
+        margin-left: 40px;
+        margin-top: 10px;
+      }
+    }
+  } // 最新动态
+
+  .competitions {
+
+  }
+}
+
+
