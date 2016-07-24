@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: Arial, "Hiragino Sans GB", "Microsoft YaHei",
+  "WenQuanYi Micro Hei", sans-serif;
+}
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+h1 {
+  display: inline-block;
+  padding: 0 20px;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+@font-face {font-family: "iconfont";
+  src: url('./icons/iconfont.eot?t=1469343399'); /* IE9*/
+  src: url('./icons/iconfont.eot?t=1469343399#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('./icons/iconfont.woff?t=1469343399') format('woff'), /* chrome, firefox */
+  url('./icons/iconfont.ttf?t=1469343399') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('./icons/iconfont.svg?t=1469343399#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-atom {
+  font-size: 30px;
+  vertical-align: sub;
+}
+
+/* 公共样式方面 */
+.outer-container {
+  width: 100%;
+  min-width: 1025px;
+}
+.inner-container {
+  width: 1025px;
+  margin: 0 auto;
+}
+
+.nav-outer-container {
+  background-color: #000;
+  color: #fff;
+  .nav-container {
+    display: inline-block;
+  }
+  .nav-item {
+    display: inline-block;
+    a {
+      display: inline-block;
+      padding: 0 10px;
+      height: 55px;
+      line-height: 55px;
+      font-size: 15px;
+      color: #fff;
+      transition: all 1s;
+    }
+  }
+  .nav-item:hover a {
+    background-color: #044881;
+  }
+  .nav-links {
+    float: right;
+    text-align: right;
+    line-height: 53px;
+    a {
+      color: #fff;
+      font-size: 13px;
+      padding: 0 0 0 10px;
+    }
+  }
+}
+
