@@ -90,8 +90,7 @@
 .main-right {
   float: right;
   width: 290px;
-  height: 100px;
-  background-color: #00cc99;
+  overflow: hidden;
 }
 /* main 区域样式控制 */
 
@@ -162,5 +161,49 @@
   }
   .tags {
     color: #80a9fc;
+  }
+}
+/* 各种活动 */
+
+.right-wrapper {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px 5px;
+  background-color: #ccc;
+  border-radius: 5px;
+  .title {
+    padding-left: 15px;
+    padding-bottom: 5px;
+
+  }
+}
+.right-wrapper-inner {
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.now-item {
+
+}
+.now-img {
+  display: inline-block;
+  width: 90px;
+  height: 115px;
+  background-color: #00cc99;
+}
+.now-content {
+  float: right;
+  width: 160px;
+  height: 115px;
+  background-color: #00cc99;
+  .title {
+    padding: 0;
+    display: inline-block;
+    width: 120px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 15px;
   }
 }
