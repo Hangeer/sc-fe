@@ -167,8 +167,9 @@
 
 .right-wrapper {
   box-sizing: border-box;
+  margin-bottom: 20px;
   width: 100%;
-  padding: 10px 5px;
+  padding: 10px 7px;
   background-color: #ccc;
   border-radius: 5px;
   .title {
@@ -184,7 +185,10 @@
   background-color: #fff;
 }
 .now-item {
-
+  margin-bottom: 10px;
+}
+.now-item:last-of-type {
+  margin-bottom: 0;
 }
 .now-img {
   display: inline-block;
@@ -196,7 +200,6 @@
   float: right;
   width: 160px;
   height: 115px;
-  background-color: #00cc99;
   .title {
     padding: 0;
     display: inline-block;
@@ -205,5 +208,69 @@
     overflow: hidden;
     text-overflow: ellipsis;
     font-size: 15px;
+    line-height: 20px;
+    color: #6887cb;
+  }
+  .tag {
+    box-sizing: border-box;
+    padding: 0 5px;
+    line-height: 18px;
+    float: right;
+    font-size: 13px;
+    border: 1px solid #b3c3e5;
+    border-radius: 5px;
+    color: #b3c3e5;
+  }
+  .words {
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 5px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .words:first-of-type {
+    margin-top: 10px;
+  }
+  .words:last-of-type {
+    margin-bottom: 10px;
+  }
+  .detail {
+    padding: 0 10px;
+    display: inline-block;
+    background-color: #f55;
+    border-radius: 5px;
+  }
+  .detail a {
+    color: #fff;
+    font-size: 15px;
+    line-height: 25px;
+    width: 65px;
   }
 }
+/* 正在进行 */
+
+.hot-item {
+  position: relative;
+  padding-left: 20px;
+  a {
+    margin: 8px 0;
+    display: inline-block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 13px;
+    line-height: 20px;
+    color: #6887cb;
+  }
+  a:before {
+    content: url("../imgs/activity-hot.png");
+    position: absolute;
+    top: 8px;
+    left: 0;
+    z-index: 10;
+  }
+}
+/* 热门活动推荐 */
