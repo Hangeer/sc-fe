@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <title>活动赛事</title>
     <link rel="stylesheet" href="../styles/public-style.css">
+    <link rel="stylesheet" href="../styles/swiper-3.3.1.min.css">
     <link rel="stylesheet" href="../styles/activity.css">
 </head>
 <body>
-<div class="outer-container nav-outer-container">
-    <div class="inner-container">
+<section class="outer-container nav-outer-container">
+    <nav class="inner-container">
         <ul class="nav-links">
             <li>
                 <a href="#">首页</a>
@@ -40,10 +41,10 @@
                 <a href="#">关于我们</a>
             </li>
         </ul>
-    </div>
-</div>
-<div class="outer-container search-outer-container">
-    <div class="inner-container">
+    </nav>
+</section>
+<header class="outer-container search-outer-container">
+    <div id="header-row" class="inner-container">
         <div class="title-img"></div>
             <span class="title">
                 活动赛事
@@ -57,12 +58,23 @@
             </div>
         </form>
     </div>
-</div>
-<div class="outer-container main-outer-container">
+</header>
+<section class="outer-container main-outer-container">
     <div class="inner-container">
         <div class="main-left">
-            <div class="slider-container">
-
+            <div class="slider-container swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="../imgs/home-speech.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../imgs/home-slider-test.png">
+                    </div>
+                    <div class="swiper-slide" >
+                        <img src="../imgs/home-speech.png">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
             </div>
             <div class="main-nav">
                 <ul>
@@ -75,14 +87,14 @@
                     <li>
                         已结束
                     </li>
-                    <li>
+                    <li class="new">
                         直播间
                     </li>
                 </ul>
             </div>
             <div class="activity-container">
                 <div class="activity-item">
-                    <div class="activity-img"></div>
+                    <img src="../imgs/actitity.png" class="activity-img">
                     <div class="activity-content">
                         <a href="#" class="title">【万圣节】化妆舞会时尚趴</a>
                         <p class="msg">地点: 2015 教室</p>
@@ -92,7 +104,7 @@
                     </div>
                 </div>
                 <div class="activity-item">
-                    <div class="activity-img"></div>
+                    <img src="../imgs/actitity.png" class="activity-img">
                     <div class="activity-content">
                         <a href="#" class="title">【万圣节】化妆舞会时尚趴</a>
                         <p class="msg">地点: 2015 教室</p>
@@ -102,7 +114,7 @@
                     </div>
                 </div>
                 <div class="activity-item">
-                    <div class="activity-img"></div>
+                    <img src="../imgs/actitity.png" class="activity-img">
                     <div class="activity-content">
                         <a href="#" class="title">【万圣节】化妆舞会时尚趴</a>
                         <p class="msg">地点: 2015 教室</p>
@@ -112,7 +124,7 @@
                     </div>
                 </div>
                 <div class="activity-item">
-                    <div class="activity-img"></div>
+                    <img src="../imgs/actitity.png" class="activity-img">
                     <div class="activity-content">
                         <a href="#" class="title">【万圣节】化妆舞会时尚趴</a>
                         <p class="msg">地点: 2015 教室</p>
@@ -122,7 +134,7 @@
                     </div>
                 </div>
                 <div class="activity-item">
-                    <div class="activity-img"></div>
+                    <img src="../imgs/actitity.png" class="activity-img">
                     <div class="activity-content">
                         <a href="#" class="title">【万圣节】化妆舞会时尚趴</a>
                         <p class="msg">地点: 2015 教室</p>
@@ -132,7 +144,7 @@
                     </div>
                 </div>
                 <div class="activity-item">
-                    <div class="activity-img"></div>
+                    <img src="../imgs/actitity.png" class="activity-img">
                     <div class="activity-content">
                         <a href="#" class="title">【万圣节】化妆舞会时尚趴</a>
                         <p class="msg">地点: 2015 教室</p>
@@ -143,12 +155,24 @@
                 </div>
             </div>
         </div>
-        <div class="main-right">
+        <aside class="main-right">
             <div class="right-wrapper">
                 <p class="title">正在进行</p>
                 <div class="right-wrapper-inner">
                     <div class="now-item">
-                        <div class="now-img"></div>
+                        <img src="../imgs/actitity.png" class="now-img">
+                        <div class="now-content">
+                            <a href="#" class="title">文峰青年大讲堂</a>
+                            <span class="tag">抢票</span>
+                            <p class="words">抢票时间: 2014.11.11</p>
+                            <p class="words">抢票地点: 太极西三门</p>
+                            <div class="detail">
+                                <a href="#">点击详情</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="now-item">
+                        <img src="../imgs/actitity.png" class="now-img">
                         <div class="now-content">
                             <a href="#" class="title">文峰青年大讲堂放的萨芬</a>
                             <span class="tag">抢票</span>
@@ -160,19 +184,7 @@
                         </div>
                     </div>
                     <div class="now-item">
-                        <div class="now-img"></div>
-                        <div class="now-content">
-                            <a href="#" class="title">文峰青年大讲堂放的萨芬</a>
-                            <span class="tag">抢票</span>
-                            <p class="words">抢票时间: 2014.11.11</p>
-                            <p class="words">抢票地点: 太极西三门</p>
-                            <div class="detail">
-                                <a href="#">点击详情</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="now-item">
-                        <div class="now-img"></div>
+                        <img src="../imgs/actitity.png" class="now-img">
                         <div class="now-content">
                             <a href="#" class="title">文峰青年大讲堂放的萨芬</a>
                             <span class="tag">抢票</span>
@@ -202,15 +214,40 @@
                     </p>
                 </div>
             </div>
-        </div>
+        </aside>
     </div>
-</div>
-<div class="outer-container page-outer-container">
+</section>
+<section class="outer-container page-outer-container">
     <div class="inner-container">
-
+        <span class="page-btn">
+            <a href="#" class="prev">上一页</a>
+        </span>
+        <span class="page-btn">
+            <a href="#" class="pager current-page">1</a>
+        </span>
+        <span class="page-btn">
+            <a href="#" class="pager">2</a>
+        </span>
+        <span class="page-btn">
+            <a href="#" class="pager">3</a>
+        </span>
+        <span class="page-btn">
+            <a href="#" class="pager">4</a>
+        </span>
+        <span class="page-btn">
+            <a href="#" class="pager">5</a>
+        </span>
+        <span class="page-btn">
+            <a href="#" class="next">下一页</a>
+        </span>
+        <span>转到</span>
+        <span class="page-btn">
+            <input type="text" class="page-input">
+        </span>
+        <input type="button" class="page-go" value="go">
     </div>
-</div>
-<div class="outer-container footer-outer-container">
+</section>
+<footer class="outer-container footer-outer-container">
     <div class="inner-container">
         <div class="links-container">
             <ul>
@@ -332,6 +369,24 @@
             Powered by Redrock Team
         </p>
     </div>
+</footer>
+
+<div id="back-top" class="back-top">
+
 </div>
+<nav id="aside-nav" class="aside-nav">
+    <ul>
+        <li class="current">全部</li>
+        <li>讲座</li>
+        <li>竞赛</li>
+        <li>展览</li>
+        <li>内部</li>
+        <li>其他</li>
+    </ul>
+</nav>
+
+<script src="../js/jquery-3.1.0.min.js"></script>
+<script src="../js/swiper-3.3.1.jquery.min.js"></script>
+<script src="../js/activity.js"></script>
 </body>
 </html>

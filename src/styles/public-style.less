@@ -115,3 +115,42 @@ input {
   }
 }
 /* 底部 footer 是公用的部分 */
+
+.back-top {
+  position: fixed;
+  transition: all 500ms;
+  width: 60px;
+  height: 60px;
+  top: 300px;
+  z-index: -10;
+}
+.back-top-show {
+  background: url("../imgs/top.png") no-repeat;
+  z-index: 10;
+}
+/* 回到顶部按钮 */
+
+.aside-nav {
+  background-color: #00cc99;
+  position: fixed;
+  top: 200px;
+  left: 0;
+  li {
+    transition: all 500ms;
+    width: 70px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    background-color: #666;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  li.current {
+    background-color: #ff415c;
+  }
+  li:hover {
+    background-color: #ff415c;
+  }
+}
+/* 左边 fixed 导航 */
