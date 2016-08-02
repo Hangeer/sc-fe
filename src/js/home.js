@@ -23,4 +23,15 @@ $(document).ready(()=>{
 
     topBtn.css('left', setLeft + 'px');
     //  固定 top 按钮位置
+
+    let mySwiper = new Swiper('.swiper-container', {
+        autoplay: 2000,
+        speed: 500,
+        pagination : '.swiper-pagination',
+        paginationClickable :true
+    });
+    /*
+    *  最新动态 Swiper 轮播
+    * */
+
 });

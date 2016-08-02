@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>大学生科技创新网</title>
+    <link rel="stylesheet" href="../styles/swiper-3.3.1.min.css">
     <link rel="stylesheet" href="../styles/public-style.css">
     <link rel="stylesheet" href="../styles/home.css">
 </head>
 <body>
-    <div class="outer-container nav-outer-container">
-        <div class="inner-container">
+    <section class="outer-container nav-outer-container">
+        <nav class="inner-container">
             <i class="iconfont icon-atom">&#xe602;</i>
             <h1>大学生科技创新网</h1>
             <ul class="nav-container">
@@ -38,16 +39,16 @@
                 <a href="#">我语科联</a>
                 <a href="#">关于我们</a>
             </div>
-        </div>
-    </div>
-    <div class="outer-container slogan-outer-container">
+        </nav>
+    </section>
+    <section class="outer-container slogan-outer-container">
         <div class="inner-container">
             <div class="slogan">
 
             </div>
         </div>
-    </div>
-    <div class="outer-container main-outer-container">
+    </section>
+    <section class="outer-container main-outer-container">
         <div class="inner-container">
             <div id="banner" class="banner">
 
@@ -58,7 +59,14 @@
                         <div class="circle"></div>
                         最新动态
                     </div>
-                    <div class="slider"></div>
+                    <div class="slider swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" style="background-color: #00cc99"></div>
+                            <div class="swiper-slide" style="background-color: #00dd88"></div>
+                            <div class="swiper-slide" style="background-color: #00cc55"></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
                     <div class="news-container">
                         <ul class="news-list">
                             <li class="news-item">
@@ -101,24 +109,20 @@
                     </div>
                     <div class="activity-container">
                         <div class="activity-item">
-                            <span class="activity-title">第二届全国高校物联网创新大赛啦拉拉</span>
-                            <div class="activity-img"></div>
+                            <a href="#">
+                                <span class="activity-title">第二届全国高校物联网创新大赛啦拉拉</span>
+                                <div class="activity-img"></div>
+                            </a>
                             <div class="activity-tag">
                                 <i class="iconfont icon-tag">&#xe60a;</i>
                                 物联网 创新 国家级比赛
                             </div>
                         </div>
                         <div class="activity-item">
-                            <span class="activity-title">第二届全国高校物联网创新大赛啦拉拉</span>
-                            <div class="activity-img"></div>
-                            <div class="activity-tag">
-                                <i class="iconfont icon-tag">&#xe60a;</i>
-                                物联网 创新 国家级比赛
-                            </div>
-                        </div>
-                        <div class="activity-item">
-                            <span class="activity-title">第二届全国高校物联网创新大赛啦拉拉</span>
-                            <div class="activity-img"></div>
+                            <a href="#">
+                                <span class="activity-title">第二届全国高校物联网创新大赛啦拉拉</span>
+                                <div class="activity-img"></div>
+                            </a>
                             <div class="activity-tag">
                                 <i class="iconfont icon-tag">&#xe60a;</i>
                                 物联网 创新 国家级比赛
@@ -131,24 +135,30 @@
                     </div>
                     <div class="activity-container">
                         <div class="activity-item">
-                            <span class="activity-title">第二届全国高校物联网创新大赛啦拉拉</span>
-                            <div class="activity-img"></div>
+                            <a href="#">
+                                <span class="activity-title">第二届全国高校物联网创新大赛啦拉拉</span>
+                                <div class="activity-img"></div>
+                            </a>
                             <div class="activity-tag">
                                 <i class="iconfont icon-tag">&#xe60a;</i>
                                 物联网 创新 国家级比赛
                             </div>
                         </div>
                         <div class="activity-item">
-                            <span class="activity-title">第二届全国高校物联网创新大赛啦拉拉</span>
-                            <div class="activity-img"></div>
+                            <a href="#">
+                                <span class="activity-title">第二届全国高校物联网创新大赛啦拉拉</span>
+                                <div class="activity-img"></div>
+                            </a>
                             <div class="activity-tag">
                                 <i class="iconfont icon-tag">&#xe60a;</i>
                                 物联网 创新 国家级比赛
                             </div>
                         </div>
                         <div class="activity-item">
-                            <span class="activity-title">第二届全国高校物联网创新大赛啦拉拉</span>
-                            <div class="activity-img"></div>
+                            <a href="#">
+                                <span class="activity-title">第二届全国高校物联网创新大赛啦拉拉</span>
+                                <div class="activity-img"></div>
+                            </a>
                             <div class="activity-tag">
                                 <i class="iconfont icon-tag">&#xe60a;</i>
                                 物联网 创新 国家级比赛
@@ -162,7 +172,16 @@
                         精彩图库
                     </div>
                     <div class="img-container">
-
+                        <aside class="img-left">
+                            <div class="gallery-img up"></div>
+                            <div class="gallery-img down"></div>
+                            <div class="gallery-img down"></div>
+                        </aside>
+                        <aside class="img-right">
+                            <div class="gallery-img item"></div>
+                            <div class="gallery-img item"></div>
+                            <div class="gallery-img item"></div>
+                        </aside>
                     </div>
                 </div>
                 <div class="main-items downloads">
@@ -244,7 +263,7 @@
                     </table>
                 </div>
             </div>
-            <div class="main-right">
+            <aside class="main-right">
                 <div class="main-items">
                     <div class="title-search">
                         站内搜索
@@ -284,10 +303,10 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </aside>
         </div>
-    </div>
-    <div class="outer-container footer-outer-container">
+    </section>
+    <footer class="outer-container footer-outer-container">
         <div class="inner-container">
             <div class="links-container">
                 <ul>
@@ -409,13 +428,14 @@
                 Powered by Redrock Team
             </p>
         </div>
-    </div>
+    </footer>
 
     <div id="back-top" class="back-top">
         TOP
     </div>
 
     <script src="../js/jquery-3.1.0.min.js"></script>
+    <script src="../js/swiper-3.3.1.jquery.min.js"></script>
     <script src="../js/home.js"></script>
 </body>
 </html>
