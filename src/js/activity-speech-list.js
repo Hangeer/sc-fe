@@ -2,6 +2,7 @@ $(document).ready(() => {
 
     let topBtn = $("#back-top");
     let setLeft = $("#header-row").offset().left + 1050;
+    let sideNav = $("#aside-nav");
 
     function showBackTop () {
         let scrollTop = document.body.scrollTop;
@@ -22,6 +23,7 @@ $(document).ready(() => {
     //  回到顶部
 
     topBtn.css('left', setLeft + 'px');
+    sideNav.css('left', setLeft - 1150 + 'px');
     /*
      *   设置左右 fixed 定位元素位置
      * */
